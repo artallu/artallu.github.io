@@ -313,3 +313,45 @@ footer {
     background-color: #e9ecef; /* Light gray footer */
     color: #555;
 }
+/* --- Blog Section Styles --- */
+#blog {
+    background-color: #ffffff; /* Or another light color */
+}
+
+.blog-post {
+    max-width: 800px;
+    width: 100%;
+    text-align: left;
+    background-color: #f8f9fa;
+    padding: 2rem 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.blog-post h4 {
+    margin-top: 0;
+    font-size: 1.6rem;
+    color: #007BFF;
+}
+
+.blog-meta {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+    gap: 1rem; /* Adds space between items */
+    align-items: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.blog-meta #visitor-counter-placeholder img {
+    vertical-align: middle;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #343a40;
+}
