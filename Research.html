@@ -1,115 +1,129 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Latest Technologies Discussion</title>
-    <style>
-      body {
-        background: linear-gradient(to bottom right, #ff69b4, #1e90ff);
-        color: white;
-      }
-      
-      header {
-        background-color: #333;
-        padding: 20px;
-        text-align: center;
-      }
-      
-      nav {
-        background-color: #f2f2f2;
-        padding: 10px;
-        margin-bottom: 20px;
-      }
-      
-      nav ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-      
-      nav li {
-        float: left;
-      }
-      
-      nav li a {
-        display: block;
-        color: #333;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-weight: bold;
-      }
-      
-      nav li a:hover {
-        background-color: #ddd;
-      }
-      
-      main {
-        padding: 20px;
-      }
-      
-      section {
-        background-color: #155;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      }
-      
-      h1, h2 {
-        margin-top: 0;
-      }
-      
-      footer {
-        background-color: #333;
-        color: #11f;
-        text-align: center;
-        padding: 10px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
-  </head>
-  
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raviteja Allu - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
     <header>
-      <h1>Welcome to the Latest Technologies Discussion!</h1>
+        <nav>
+            <a href="#home" class="nav-logo">Raviteja Allu</a>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    
-    <nav>
-      <ul>
-        <li><a href="#artificial-intelligence">Artificial Intelligence</a></li>
-        <li><a href="#blockchain">Blockchain</a></li>
-        <li><a href="#quantum-computing">Quantum Computing</a></li>
-        <li><a href="#internet-of-things">Internet of Things</a></li>
-      </ul>
-    </nav>
-    
+
     <main>
-      <section id="artificial-intelligence">
-        <h2>Artificial Intelligence</h2>
-        <p>Here we can discuss the latest developments in artificial intelligence, including deep learning, machine learning, and natural language processing.</p>
-      </section>
-      
-      <section id="blockchain">
-        <h2>Blockchain</h2>
-        <p>Here we can discuss the latest advancements in blockchain technology, including decentralized applications and smart contracts.</p>
-      </section>
-      
-      <section id="quantum-computing">
-        <h2>Quantum Computing</h2>
-        <p>Here we can discuss the latest breakthroughs in quantum computing, including quantum algorithms and quantum cryptography.</p>
-      </section>
-      
-      <section id="internet-of-things">
-        <h2>Internet of Things</h2>
-        <p>Here we can discuss the latest trends in the internet of things, including connected devices and smart home technology.</p>
-      </section>
+        <section id="home">
+            <div class="home-content">
+                <h1>Raviteja Allu</h1>
+                <p>Post Doctorial Researcher | Trinity College Dublin, Ireland</p>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-container">
+                <img src="Ravi.jpeg" alt="Raviteja Allu Profile Picture">
+                <p>
+                    Hello! I am Dr. Raviteja Allu, a postdoctoral researcher at Trinity College Dublin.  I am a postgraduate fellow at CONNECT, focusing on next-generation wireless communications, including cognitive radio, backscatter communications, integrated sensing and communications (ISAC), and MIMO systems. Currently working on the prototype implementation of Orthogonal Time Frequency Space (OTFS) modulation
+                </p>
+            </div>
+        </section>
+
+       <section id="experience">
+    <h2>Experience & Education</h2>
+
+    <h3 class="experience-title">Work Experience</h3>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h4>Postdoctoral Researcher</h4>
+                <h5>Dec, 2024 - Present | Trinity College Dublin</h5>
+                <p>My research focuses on implementing the prototype for the Orthogonal Time Frequency Space and study the resource allocation strategies for the Next generation wireless communication systems which includes the next generation multiple access techniques like NOMA, RSMA, etc.. in ISAC.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h4>Visiting Research Scholar</h4>
+                <h5>Jan, 2024 - May, 2024 | Temasek Laboratory, NTU, Singapore</h5>
+                <p>During this period, I worked as a visiting research scholar at Temasek Laboratory, NTU, Singapore. In NTU, I worked on the prototyping of Reconfigurable Intelligent surfaces and its applications in passive localization.</p>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="experience-title">Education</h3>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h4>Ph.D. in Institute of Communications Engineering</h4>
+                <h5>Feb, 2021 - Sep, 2024 | National Sun Yat-sen University, Taiwan</h5>
+                <p>My doctoral research contributed significantly to the field of wireless communications. I worked on projects like Integrated sensing and communication systems enhanced and reconfigurable with intelligent surface assistance using next-generation multi-access technology, and 6G mid and high-frequency high-order MIMO mobile communication system.</p>
+            </div>
+        </div>
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <h4>M.Tech. in Electrical Engineering</h4>
+                <h5>Sept, 2017 - May, 2019 | National Institute of Technology Rourkela, India</h5>
+                <p>My research centered on the development of a tracking controller for autonomous VTOL aircraft, employing recurrent neural networks to optimize landing on aircraft carriers using SIMULINK.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section id="publications">
+    <h2>Publications</h2>
+    <div class="publications-list">
+        <h3>Journals</h3>
+        <ol>
+            <li>S. Singh, <strong>R. Allu</strong>, K. Singh, S. K. Singh and M. -L. Ku, ”Green Multi-Active RIS-Aided Secure Full- Duplex IoT Networks With Imperfect CSI: A Power Minimization Approach,” in <em>IEEE Internet of Things Journal</em>, doi: <a href="https://doi.org/10.1109/JIOT.2024.3515964" target="_blank">10.1109/JIOT.2024.3515964</a>.</li>
+            <li><strong>R. Allu</strong>, M. Katwe, K. Singh, S. L. Cotton, C. -P. Li and T. Q. Duong, ”Robust Beamforming Design for RSMA-Integrated Full-Duplex Communications: Energy and Spectral Efficiency Trade-off,” in <em>IEEE Transactions on Green Communications and Networking</em>, doi: <a href="https://doi.org/10.1109/TGCN.2024.3466295" target="_blank">10.1109/TGCN.2024.3466295</a>.</li>
+            <li>J. A. Mead, K. Singh, <strong>R. Allu</strong>, S. Biswas and M. -L. Ku, ”Hardware Impairment Aware Transmit Power Minimization for Secure RIS-Aided Full-Duplex NOMA Communications,” in <em>IEEE Transactions on Green Communications and Networking</em>, doi: <a href="https://doi.org/10.1109/TGCN.2024.3466311" target="_blank">10.1109/TGCN.2024.3466311</a>.</li>
+            <li>A. Paul, <strong>R. Allu</strong>, K. Singh, C. -P. Li and T. Q. Duong, ”Hybridized MA-DRL for Serving xURLLC With Cognizable RIS and UAV Integration,” in <em>IEEE Transactions on Wireless Communications</em>, vol. 23, no. 10, pp. 15507-15524, Oct. 2024, doi: <a href="https://doi.org/10.1109/TWC.2024.3430509" target="_blank">10.1109/TWC.2024.3430509</a>.</li>
+            <li>S. Singh, <strong>A. Raviteja</strong>, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, ”Secrecy Rate Maximization for Active RIS-Aided Robust Uplink NOMA Communications,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 11, pp. 2960-2964, Nov. 2024, doi: <a href="https://doi.org/10.1109/LWC.2024.3424332" target="_blank">10.1109/LWC.2024.3424332</a>.</li>
+            <li><strong>R. Allu</strong>, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, ”Robust Energy Efficient Beamforming Design for ISAC Full-Duplex Communication Systems,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 9, pp. 2452-2456, Sept. 2024, doi: <a href="https://doi.org/10.1109/LWC.2024.3418780" target="_blank">10.1109/LWC.2024.3418780</a>.</li>
+            <li>V. Sharma, <strong>R. Allu</strong>, S. K. Singh, K. Singh, T. Q. Duong and T. A. Tsiftsis, ”Robust Transmission Design in Multiobjective RIS-Aided SWIPT IoT Communications,” in <em>IEEE Internet of Things Journal</em>, vol. 11, no. 10, pp. 18605-18618, 15 May 2024, doi: <a href="https://doi.org/10.1109/JIOT.2024.3364392" target="_blank">10.1109/JIOT.2024.3364392</a>.</li>
+            <li><strong>A. Raviteja</strong>, K. Singh, K. Agrawal, Z. Ding and C. -P. Li, ”FD-NOMA Enabled Multiuser Transmission With Backscatter Communication,” in <em>IEEE Wireless Communications Letters</em>, vol. 12, no. 4, pp. 723-727, April 2023, doi: <a href="https://doi.org/10.1109/LWC.2023.3242041" target="_blank">10.1109/LWC.2023.3242041</a>.</li>
+            <li><strong>R. Allu</strong>, O. Taghizadeh, S. K. Singh, K. Singh and C. -P. Li, ”Robust Beamformer Design in Active RIS- Assisted Multiuser MIMO Cognitive Radio Networks,” in <em>IEEE Transactions on Cognitive Communications and Networking</em>, vol. 9, no. 2, pp. 398-413, April 2023, doi: <a href="https://doi.org/10.1109/TCCN.2023.3235788" target="_blank">10.1109/TCCN.2023.3235788</a>.</li>
+        </ol>
+        
+        <h3 class="conf-title">Conferences</h3>
+        <ol>
+            <li>S. Singh, <strong>A. Raviteja</strong>, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, ”Active RIS-aided Uplink for Robust and Secure Multi-User Private Industrial Network,” <em>2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall)</em>, Washington, DC, USA, 2024, pp. 1-5, doi: <a href="https://doi.org/10.1109/VTC2024-Fall63153.2024.10757924" target="_blank">10.1109/VTC2024- Fall63153.2024.10757924</a>.</li>
+            <li>F. Nassar, K. Singh, S. Prakriya, <strong>R. Allu</strong>, C. Pan and C. -P. Li, ”Robust Beamformer Design for Backscatter-Enabled RIS-Assisted NOMA ISAC,” <em>2024 IEEE International Conference on Communications Workshops (ICC Workshops)</em>, Denver, CO, USA, 2024, pp. 608-613, doi: <a href="https://doi.org/10.1109/ICCWork-shops59551.2024.10615384" target="_blank">10.1109/ICCWork-shops59551.2024.10615384</a>.</li>
+            <li><strong>R. Allu</strong>, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, ”RSMA-Integrated Full-Duplex Communications for Better Energy and Spectral-Efficiency Trade-off,” <em>2023 IEEE Globecom Workshops (GC Wkshps)</em>, Kuala Lumpur, Malaysia, 2023, pp. 1213-1218.</li>
+            <li>V. Sharma, <strong>R. Allu</strong>, S. K. Singh, K. Singh, and T. A. Tsiftsis, ”RIS-aided SWIPT Green Communications Under Imperfect CSI,” <em>GLOBECOM 2023 - 2023 IEEE Global Communications Conference</em>, Kuala Lumpur, Malaysia, 2023.</li>
+            <li><strong>R. Allu</strong>, M. Katwe, K. Singh, T. Q. Duong and C. -P. Lit, ”Towards Improved Spectral Efficiency Using RSMA-Integrated Full-Duplex Communications,” <em>PIMRC 2023 - 2023 IEEE Personal, Indoor and Mobile Radio Communications Conference</em>, Toronto, Canada, 2023.</li>
+            <li><strong>R. Allu</strong>, S. K. Singh, O. Taghizadeh, K. Singh and C. -P. Lit, ”Energy-Efficient Precoder Design in RIS-Assisted Multiuser MIMO Cognitive Radio Networks,” <em>GLOBECOM 2022 - 2022 IEEE Global Communications Conference</em>, Rio de Janeiro, Brazil, 2022, pp. 3338-3343.</li>
+        </ol>
+    </div>
+</section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me via email or connect with me on social media.</p>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> alluraviteja202@gmail.com</p>
+                <p><i class="fas fa-phone"></i> +353 85 796 9770</p>
+            </div>
+            <div class="social-links">
+    <a href="https://www.linkedin.com/in/ravitejaallu-art/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/artallu" target="_blank"><i class="fab fa-github"></i></a>
+</div>
+        </section>
     </main>
-    
+
     <footer>
-      <p>Copyright &copy; 2023 Latest Technologies Discussion</p>
+        <p>&copy; 2025 Raviteja Allu. All Rights Reserved.</p>
     </footer>
-  </body>
+
+</body>
 </html>
