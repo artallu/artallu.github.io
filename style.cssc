@@ -3,11 +3,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333333; /* Dark text for light background */
+    color: #999339; /* Dark text for light background */
     scroll-behavior: smooth;
     
     /* Animated Gradient Background */
-    background: linear-gradient(-45deg, #e0eafc, #cfdef3, #f0f2f5, #ffffff);
+    background: linear-gradient(45deg, rgba(65, 89, 208, 1.000) 0.000%, rgba(76, 39, 234, 1.000) 14.286%, rgba(116, 25, 235, 1.000) 28.571%, rgba(171, 53, 211, 1.000) 42.857%, rgba(227, 110, 171, 1.000) 57.143%, rgba(255, 171, 133, 1.000) 71.429%, rgba(255, 208, 110, 1.000) 85.714%, rgba(255, 205, 112, 1.000) 100.000%)
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
@@ -18,7 +18,6 @@ body {
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
-
 
 /* --- Header and Navigation Bar --- */
 header {
@@ -67,7 +66,6 @@ nav ul li a:hover {
     color: #007BFF; /* A nice blue for the accent color */
 }
 
-
 /* --- Main Content and Sections --- */
 main {
     padding-top: 80px;
@@ -109,7 +107,6 @@ h2 {
     color: #555555;
 }
 
-
 /* --- About Me Section --- */
 .about-container {
     display: flex;
@@ -118,15 +115,6 @@ h2 {
     max-width: 900px;
     text-align: left;
 }
-
-.about-container img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #007BFF;
-}
-
 
 /* --- Button Styling --- */
 .btn {
@@ -145,7 +133,6 @@ h2 {
     transform: translateY(-2px);
 }
 
-
 /* --- Experience Timeline Styles --- */
 #experience {
     background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent white */
@@ -157,26 +144,6 @@ h2 {
     width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
-}
-
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: #f0f2f5;
-    border: 3px solid #007BFF;
-    top: 50%; /* This vertically centers the dot */
-    transform: translateY(-50%); /* This ensures it's perfectly centered */
-    border-radius: 50%;
-    z-index: 1;
-}
-.experience-title {
-    font-size: 1.8rem;
-    color: #333;
-    text-align: center;
-    margin-top: 3rem;
-    margin-bottom: 1.5rem;
 }
 
 .timeline-item {
@@ -192,11 +159,12 @@ h2 {
     height: 20px;
     background-color: #f0f2f5;
     border: 3px solid #007BFF;
-    top: 50%; /* This vertically centers the dot */
-    transform: translateY(-50%); /* This ensures it's perfectly centered */
+    top: 50%;
+    transform: translateY(-50%);
     border-radius: 50%;
     z-index: 1;
 }
+
 .timeline-item:nth-child(odd) { left: 0; text-align: right; }
 .timeline-item:nth-child(even) { left: 50%; text-align: left; }
 .timeline-item:nth-child(odd)::after { right: -11.5px; }
@@ -229,7 +197,6 @@ h2 {
     line-height: 1.6;
     color: #444;
 }
-
 
 /* --- Publications Section Styles --- */
 .publications-list {
@@ -280,7 +247,6 @@ h2 {
     text-decoration: underline;
 }
 
-
 /* --- Contact and Footer Styles --- */
 #contact {
     background-color: #f8f9fa; /* Off-white for contrast */
@@ -313,7 +279,8 @@ footer {
     background-color: #e9ecef; /* Light gray footer */
     color: #555;
 }
-/* Add to style.css if you want specific blog section styling */
+
+/* --- Blog Section Styling --- */
 #blog-post {
     padding: 6rem 2rem; /* More padding for blog content */
     background-color: #fefefe; /* Slightly different background for the blog page */
@@ -352,6 +319,17 @@ footer {
 .blog-content li {
     margin-bottom: 0.8rem;
     line-height: 1.6;
+}
+
+.blog-content pre {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+}
+
+.blog-content code {
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* Style for the back to home button on blog page */

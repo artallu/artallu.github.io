@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raviteja Allu - Home</title>
+    <title>Raviteja Allu - About</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
             <div class="container mx-auto flex justify-between items-center">
                 <a href="index.html" class="nav-logo text-2xl font-bold text-gray-800">Raviteja Allu</a>
                 <ul class="flex space-x-6">
-                    <li><a href="about.html" class="text-gray-600 hover:text-blue-700">About Me</a></li>
+                    <li><a href="about.html" class="text-gray-600 hover:text-blue-700 font-semibold">About Me</a></li>
                     <li><a href="experience.html" class="text-gray-600 hover:text-blue-700">Experience</a></li>
                     <li><a href="publications.html" class="text-gray-600 hover:text-blue-700">Publications</a></li>
                     <li><a href="contact.html" class="text-gray-600 hover:text-blue-700">Contact</a></li>
@@ -24,11 +24,15 @@
     </header>
 
     <main>
-        <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center">
-            <div class="home-content">
-                <h1 class="text-5xl font-bold text-gray-800 mb-4">Raviteja Allu</h1>
-                <p class="text-xl text-gray-600 mb-6">Post Doctoral Researcher | Trinity College Dublin, Ireland</p>
-                <a href="about.html" class="btn">Learn More About Me</a>
+        <section id="about" class="min-h-screen flex flex-col justify-center items-center">
+            <div class="about-container container mx-auto">
+                <img src="Ravi.jpg" alt="Raviteja Allu Profile Picture" class="w-48 h-48 rounded-full border-4 border-blue-700 object-cover">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-700 mb-6">About Me</h2>
+                    <p class="text-gray-700 mb-4">
+                        Hello! I am Dr. Raviteja Allu, a postdoctoral researcher at Trinity College Dublin. I am a postgraduate fellow at CONNECT, focusing on next-generation wireless communications, including cognitive radio, backscatter communications, integrated sensing and communications (ISAC), and MIMO systems. Currently working on the prototype implementation of Orthogonal Time Frequency Space (OTFS) modulation.
+                    </p>
+                </div>
             </div>
         </section>
     </main>
