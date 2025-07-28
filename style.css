@@ -3,11 +3,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    color: #999339; /* Dark text for light background */
+    color: #333333; /* Dark text for light background */
     scroll-behavior: smooth;
     
     /* Animated Gradient Background */
-    background: linear-gradient(45deg, rgba(65, 89, 208, 1.000) 0.000%, rgba(76, 39, 234, 1.000) 14.286%, rgba(116, 25, 235, 1.000) 28.571%, rgba(171, 53, 211, 1.000) 42.857%, rgba(227, 110, 171, 1.000) 57.143%, rgba(255, 171, 133, 1.000) 71.429%, rgba(255, 208, 110, 1.000) 85.714%, rgba(255, 205, 112, 1.000) 100.000%)
+    background: linear-gradient(-45deg, #e0eafc, #cfdef3, #f0f2f5, #ffffff);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
@@ -49,10 +49,11 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
 nav ul li {
-    margin-left: 2rem;
+    margin-left: 1rem; /* Reduced for mobile */
 }
 
 nav ul li a {
@@ -72,7 +73,7 @@ main {
 }
 
 section {
-    padding: 4rem 2rem;
+    padding: 2rem 1rem; /* Reduced padding for mobile */
     min-height: 80vh;
     border-bottom: 1px solid #e0e0e0;
     display: flex;
@@ -87,13 +88,13 @@ section:last-of-type {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Reduced for mobile */
     color: #222;
 }
 
 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem; /* Reduced for mobile */
+    margin-bottom: 1.5rem;
     color: #007BFF; /* Blue accent color for headings */
 }
 
@@ -103,23 +104,32 @@ h2 {
 }
 
 .home-content p {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced for mobile */
     color: #555555;
 }
 
 /* --- About Me Section --- */
 .about-container {
     display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
     align-items: center;
-    gap: 2rem;
+    gap: 1.5rem;
     max-width: 900px;
     text-align: left;
+}
+
+.about-container img {
+    width: 150px; /* Reduced for mobile */
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #007BFF;
 }
 
 /* --- Button Styling --- */
 .btn {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem; /* Slightly smaller for mobile */
     background-color: #007BFF;
     color: #ffffff;
     text-decoration: none;
@@ -143,35 +153,33 @@ h2 {
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .timeline-item {
-    padding: 10px 40px;
+    padding: 10px 20px; /* Reduced padding for mobile */
     position: relative;
-    width: 50%;
+    width: 100%; /* Full width on mobile */
+    left: 0; /* Reset positioning */
+    text-align: left; /* Consistent alignment */
 }
 
 .timeline-item::after {
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 15px; /* Smaller dot for mobile */
+    height: 15px;
     background-color: #f0f2f5;
     border: 3px solid #007BFF;
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
     z-index: 1;
+    left: -8px; /* Position dot on left for all items */
 }
 
-.timeline-item:nth-child(odd) { left: 0; text-align: right; }
-.timeline-item:nth-child(even) { left: 50%; text-align: left; }
-.timeline-item:nth-child(odd)::after { right: -11.5px; }
-.timeline-item:nth-child(even)::after { left: -11.5px; }
-
 .timeline-content {
-    padding: 20px 30px;
+    padding: 15px 20px;
     background-color: #ffffff;
     position: relative;
     border-radius: 8px;
@@ -180,12 +188,12 @@ h2 {
 
 .timeline-content h4 {
     margin-top: 0;
-    font-size: 1.4rem;
+    font-size: 1.2rem; /* Reduced for mobile */
     color: #007BFF;
 }
 
 .timeline-content h5 {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #666;
     margin: 5px 0 10px 0;
     font-weight: normal;
@@ -193,7 +201,7 @@ h2 {
 
 .timeline-content p {
     margin-bottom: 0;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.6;
     color: #444;
 }
@@ -207,16 +215,16 @@ h2 {
 }
 
 .publications-list h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem; /* Reduced for mobile */
     color: #333;
     border-bottom: 2px solid #007BFF;
     padding-bottom: 0.5rem;
     margin-top: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .publications-list h3.conf-title {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .publications-list ol {
@@ -225,8 +233,8 @@ h2 {
 }
 
 .publications-list li {
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 .publications-list li strong {
@@ -253,7 +261,7 @@ h2 {
 }
 
 .contact-info p {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduced for mobile */
     margin: 0.5rem 0;
 }
 
@@ -264,8 +272,8 @@ h2 {
 
 .social-links a {
     color: #555;
-    font-size: 2rem;
-    margin: 0 1rem;
+    font-size: 1.5rem; /* Reduced for mobile */
+    margin: 0 0.5rem; /* Adjusted spacing */
     transition: color 0.3s;
 }
 
@@ -275,14 +283,14 @@ h2 {
 
 footer {
     text-align: center;
-    padding: 1.5rem;
+    padding: 1rem; /* Reduced for mobile */
     background-color: #e9ecef; /* Light gray footer */
     color: #555;
 }
 
 /* --- Blog Section Styling --- */
 #blog-post {
-    padding: 6rem 2rem; /* More padding for blog content */
+    padding: 3rem 1rem; /* Reduced padding for mobile */
     background-color: #fefefe; /* Slightly different background for the blog page */
     text-align: left; /* Align blog text to the left */
 }
@@ -295,35 +303,37 @@ footer {
 .blog-content h2 {
     color: #007BFF;
     margin-bottom: 1rem;
+    font-size: 2rem; /* Reduced for mobile */
 }
 
 .blog-content .post-meta {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     color: #777;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     border-bottom: 1px solid #eee;
-    padding-bottom: 1rem;
+    padding-bottom: 0.8rem;
 }
 
 .blog-content h3 {
     color: #333;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem; /* Reduced for mobile */
 }
 
 .blog-content ol {
     list-style-type: decimal;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .blog-content li {
-    margin-bottom: 0.8rem;
-    line-height: 1.6;
+    margin-bottom: 0.6rem;
+    line-height: 1.5;
 }
 
 .blog-content pre {
     background-color: #f4f4f4;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     overflow-x: auto;
 }
@@ -334,11 +344,11 @@ footer {
 
 /* Style for the back to home button on blog page */
 .blog-content .btn {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: inline-block;
     background-color: #007BFF;
     color: #ffffff;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
@@ -348,4 +358,60 @@ footer {
 .blog-content .btn:hover {
     background-color: #0056b3;
     transform: translateY(-2px);
+}
+
+/* --- Media Queries for Mobile Responsiveness --- */
+@media (max-width: 640px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0; /* Adjust spacing for mobile */
+    }
+
+    .about-container {
+        flex-direction: column; /* Ensure image and text stack vertically */
+        text-align: center; /* Center text for mobile */
+    }
+
+    .timeline-item {
+        width: 100%; /* Full width for mobile */
+        left: 0; /* Align all items to the left */
+        text-align: left; /* Consistent text alignment */
+    }
+
+    .timeline-item::after {
+        left: -8px; /* Keep dot on the left */
+    }
+
+    section {
+        padding: 2rem 1rem; /* Consistent reduced padding */
+    }
+
+    #blog-post {
+        padding: 3rem 1rem; /* Consistent with sections */
+    }
+
+    h1 {
+        font-size: 2rem; /* Further reduced for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .home-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 0.5rem 1rem; /* Slightly smaller buttons */
+    }
+
+    .social-links a {
+        font-size: 1.2rem; /* Smaller icons for mobile */
+        margin: 0 0.4rem;
+    }
 }
