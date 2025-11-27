@@ -7,57 +7,126 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-100 font-sans">
+<body>
     <header>
-        <nav class="bg-white p-4 shadow-md">
-            <div class="container mx-auto flex justify-between items-center">
-                <a href="index.html" class="nav-logo text-2xl font-bold text-gray-800">Raviteja Allu</a>
-                <ul class="flex space-x-6">
-                    <li><a href="about.html" class="text-gray-600 hover:text-blue-700">About Me</a></li>
-                    <li><a href="experience.html" class="text-gray-600 hover:text-blue-700">Experience</a></li>
-                    <li><a href="publications.html" class="text-gray-600 hover:text-blue-700 font-semibold">Publications</a></li>
-                    <li><a href="contact.html" class="text-gray-600 hover:text-blue-700">Contact</a></li>
-                    <li><a href="blog.html" class="text-gray-600 hover:text-blue-700">Blog</a></li>
-                </ul>
-            </div>
+        <nav class="container mx-auto flex justify-between items-center p-4">
+            <a href="index.html" class="nav-logo text-2xl">Raviteja Allu</a>
+            <ul class="flex space-x-6">
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="experience.html">Experience</a></li>
+                <li><a href="publications.html" class="font-semibold" style="color: var(--accent);">Publications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section id="publications" class="min-h-screen flex flex-col justify-center items-center">
-            <div class="publications-list container mx-auto">
-                <h2 class="text-3xl font-bold text-blue-700 mb-6">Publications</h2>
-                <h3>Journals</h3>
-                <ol>
-                    <li>R. Allu, M. Katwe, K. Singh and H. Shin, "Energy Efficiency Optimization for Integrated Sensing and Communications-aided Full Duplex MIMO System with Imperfect CSI," in <em>IEEE Transactions on Vehicular Technology</em>,  doi: <a href="https://doi.org/10.1109/TVT.2025.3592910">10.1109/TVT.2025.3592910</a> (Early Access).</li> 
-                    <li>P. S. Chauhan, R. Allu, K. Singh, V. Bhatia and Z. Ding, "Power Minimization of STAR-RIS-aided Underlay D2D-NOMA System with Energy Harvesting," in <em>IEEE Wireless Communications Letters</em>, doi: <a href="https://doi.org/10.1109/LWC.2025.3578874">10.1109/LWC.2025.3578874</a> (Early Access).</li> 
-                    <li>J. A. Mead, K. Singh, R. Allu, M. Katwe, M. -L. Ku and S. Biswas, "Secure RIS-Aided FD NOMA Communications for Hardware Impaired IoT Networks," in <em>IEEE Internet of Things Journal</em>, vol. 12, no. 14, pp. 28332-28347, 15 July15, 2025, doi: <a href="https://doi.org/10.1109/JIOT.2025.3566504">10.1109/JIOT.2025.3566504</a>.</li>
-                    <li>R. K, R. Allu, K. Singh, C. -P. Li and S. Biswas, "Optimized Resource Allocation in NOMA-Enabled ISAC Systems With RFID Backscatterers," in <em>IEEE Wireless Communications Letters</em>, vol. 14, no. 7, pp. 1934-1938, July 2025, doi: <a href="https://doi.org/10.1109/LWC.2025.3559494">10.1109/LWC.2025.3559494</a>.</li>
-                    <li>S. Singh, R. Allu, K. Singh, S. K. Singh and M. -L. Ku, “Green Multi-Active RIS-Aided Secure Full-Duplex IoT Networks With Imperfect CSI: A Power Minimization Approach,” in <em>IEEE Internet of Things Journal</em>,  vol. 12, no. 8, pp. 10932-10947, 15 April, 2025, doi: <a href="https://doi.org/10.1109/JIOT.2024.3515964">10.1109/JIOT.2024.3515964</a> (Early Access).</li> 
-                    <li>R. Allu, M. Katwe, K. Singh, S. L. Cotton, C. -P. Li and T. Q. Duong, “Robust Beamforming Design for RSMA-Integrated Full-Duplex Communications: Energy and Spectral Efficiency Trade-off,” in <em>IEEE Transactions on Green Communications and Networking</em>, doi: <a href="https://doi.org/10.1109/TGCN.2024.3466295">10.1109/TGCN.2024.3466295</a>.</li>
-                    <li>J. A. Mead, K. Singh, R. Allu, S. Biswas and M. -L. Ku, “Hardware Impairment Aware Transmit Power Minimization for Secure RIS-Aided Full-Duplex NOMA Communications,” in <em>IEEE Transactions on Green Communications and Networking</em>, doi: <a href="https://doi.org/10.1109/TGCN.2024.3466311">10.1109/TGCN.2024.3466311</a>.</li>
-                    <li>A. Paul, R. Allu, K. Singh, C. -P. Li and T. Q. Duong, “Hybridized MA-DRL for Serving xURLLC With Cognizable RIS and UAV Integration,” in <em>IEEE Transactions on Wireless Communications</em>, vol. 23, no. 10, pp. 15507-15524, Oct. 2024, doi: <a href="https://doi.org/10.1109/TWC.2024.3430509">10.1109/TWC.2024.3430509</a>.</li>
-                    <li>S. Singh, A. Raviteja, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, “Secrecy Rate Maximization for Active RIS-Aided Robust Uplink NOMA Communications,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 11, pp. 2960-2964, Nov. 2024, doi: <a href="https://doi.org/10.1109/LWC.2024.3424332">10.1109/LWC.2024.3424332</a>.</li>
-                    <li>R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, “Robust Energy Efficient Beamforming Design for ISAC Full-Duplex Communication Systems,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 9, pp. 2452-2456, Sept. 2024, doi: <a href="https://doi.org/10.1109/LWC.2024.3418780">10.1109/LWC.2024.3418780</a>.</li>
-                    <li>V. Sharma, R. Allu, S. K. Singh, K. Singh, T. Q. Duong and T. A. Tsiftsis, “Robust Transmission Design in Multiobjective RIS-Aided SWIPT IoT Communications,” in <em>IEEE Internet of Things Journal</em>, vol. 11, no. 10, pp. 18605-18618, 15 May 2024, doi: <a href="https://doi.org/10.1109/JIOT.2024.3364392">10.1109/JIOT.2024.3364392</a>.</li>
-                    <li>A. Raviteja, K. Singh, K. Agrawal, Z. Ding and C. -P. Li, “FD-NOMA Enabled Multiuser Transmission With Backscatter Communication,” in <em>IEEE Wireless Communications Letters</em>, vol. 12, no. 4, pp. 723-727, April 2023, doi: <a href="https://doi.org/10.1109/LWC.2023.3242041">10.1109/LWC.2023.3242041</a>.</li>
-                    <li>R. Allu, O. Taghizadeh, S. K. Singh, K. Singh and C. -P. Li, “Robust Beamformer Design in Active RIS-Assisted Multiuser MIMO Cognitive Radio Networks,” in <em>IEEE Transactions on Cognitive Communications and Networking</em>, vol. 9, no. 2, pp. 398-413, April 2023, doi: <a href="https://doi.org/10.1109/TCCN.2023.3235788">10.1109/TCCN.2023.3235788</a>.</li>
-                </ol>
-                <h3 class="conf-title">Conferences</h3>
-                <ol>
-                    <li>S. Singh, A. Raviteja, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, “Active RIS-aided Uplink for Robust and Secure Multi-User Private Industrial Network,” 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), Washington, DC, USA, 2024, pp. 1-5, doi: <a href="https://doi.org/10.1109/VTC2024-Fall63153.2024.10757924">10.1109/VTC2024-Fall63153.2024.10757924</a>.</li>
-                    <li>F. Nassar, K. Singh, S. Prakriya, R. Allu, C. Pan and C. -P. Li, “Robust Beamformer Design for Backscatter-Enabled RIS-Assisted NOMA ISAC,” 2024 IEEE International Conference on Communications Workshops (ICC Workshops), Denver, CO, USA, 2024, pp. 608-613, doi: <a href="https://doi.org/10.1109/ICCWorkshops59551.2024.10615384">10.1109/ICCWorkshops59551.2024.10615384</a>.</li>
-                    <li>R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, “RSMA-Integrated Full-Duplex Communications for Better Energy and Spectral-Efficiency Trade-off,” 2023 IEEE Globecom Workshops (GC Wkshps), Kuala Lumpur, Malaysia, 2023, pp. 1213-1218.</li>
-                    <li>V. Sharma, R. Allu, S. K. Singh, K. Singh, and T. A. Tsiftsis, “RIS-aided SWIPT Green Communications Under Imperfect CSI,” GLOBECOM 2023 - 2023 IEEE Global Communications Conference, Kuala Lumpur, Malaysia, 2023.</li>
-                    <li>R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Lit, “Towards Improved Spectral Efficiency Using RSMA-Integrated Full-Duplex Communications,” PIMRC 2023 - 2023 IEEE Personal, Indoor and Mobile Radio Communications Conference, Toronto, Canada, 2023.</li>
-                    <li>R. Allu, S. K. Singh, O. Taghizadeh, K. Singh and C. -P. Lit, “Energy-Efficient Precoder Design in RIS-Assisted Multiuser MIMO Cognitive Radio Networks,” GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3338-3343.</li>
-                </ol>
+        <section id="publications">
+            <div class="container mx-auto">
+                <div class="blog-content">
+                    <h2 class="text-3xl font-bold mb-8">Publications</h2>
+                    
+                    <h3 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Journals</h3>
+                    <ol class="list-decimal pl-5 space-y-4 mb-10 text-gray-300">
+                        <li>
+                            R. Allu, M. Katwe, K. Singh and H. Shin, "Energy Efficiency Optimization for Integrated Sensing and Communications-aided Full Duplex MIMO System with Imperfect CSI," in <em>IEEE Transactions on Vehicular Technology</em>, 
+                            <br>
+                            <a href="https://doi.org/10.1109/TVT.2025.3592910" target="_blank" class="hover:underline">doi: 10.1109/TVT.2025.3592910</a> (Early Access).
+                        </li> 
+                        <li>
+                            P. S. Chauhan, R. Allu, K. Singh, V. Bhatia and Z. Ding, "Power Minimization of STAR-RIS-aided Underlay D2D-NOMA System with Energy Harvesting," in <em>IEEE Wireless Communications Letters</em>, 
+                            <br>
+                            <a href="https://doi.org/10.1109/LWC.2025.3578874" target="_blank" class="hover:underline">doi: 10.1109/LWC.2025.3578874</a> (Early Access).
+                        </li> 
+                        <li>
+                            J. A. Mead, K. Singh, R. Allu, M. Katwe, M. -L. Ku and S. Biswas, "Secure RIS-Aided FD NOMA Communications for Hardware Impaired IoT Networks," in <em>IEEE Internet of Things Journal</em>, vol. 12, no. 14, pp. 28332-28347, 15 July, 2025, 
+                            <br>
+                            <a href="https://doi.org/10.1109/JIOT.2025.3566504" target="_blank" class="hover:underline">doi: 10.1109/JIOT.2025.3566504</a>.
+                        </li>
+                        <li>
+                            R. K, R. Allu, K. Singh, C. -P. Li and S. Biswas, "Optimized Resource Allocation in NOMA-Enabled ISAC Systems With RFID Backscatterers," in <em>IEEE Wireless Communications Letters</em>, vol. 14, no. 7, pp. 1934-1938, July 2025, 
+                            <br>
+                            <a href="https://doi.org/10.1109/LWC.2025.3559494" target="_blank" class="hover:underline">doi: 10.1109/LWC.2025.3559494</a>.
+                        </li>
+                        <li>
+                            S. Singh, R. Allu, K. Singh, S. K. Singh and M. -L. Ku, “Green Multi-Active RIS-Aided Secure Full-Duplex IoT Networks With Imperfect CSI: A Power Minimization Approach,” in <em>IEEE Internet of Things Journal</em>, vol. 12, no. 8, pp. 10932-10947, 15 April, 2025, 
+                            <br>
+                            <a href="https://doi.org/10.1109/JIOT.2024.3515964" target="_blank" class="hover:underline">doi: 10.1109/JIOT.2024.3515964</a> (Early Access).
+                        </li> 
+                        <li>
+                            R. Allu, M. Katwe, K. Singh, S. L. Cotton, C. -P. Li and T. Q. Duong, “Robust Beamforming Design for RSMA-Integrated Full-Duplex Communications: Energy and Spectral Efficiency Trade-off,” in <em>IEEE Transactions on Green Communications and Networking</em>, 
+                            <br>
+                            <a href="https://doi.org/10.1109/TGCN.2024.3466295" target="_blank" class="hover:underline">doi: 10.1109/TGCN.2024.3466295</a>.
+                        </li>
+                        <li>
+                            J. A. Mead, K. Singh, R. Allu, S. Biswas and M. -L. Ku, “Hardware Impairment Aware Transmit Power Minimization for Secure RIS-Aided Full-Duplex NOMA Communications,” in <em>IEEE Transactions on Green Communications and Networking</em>, 
+                            <br>
+                            <a href="https://doi.org/10.1109/TGCN.2024.3466311" target="_blank" class="hover:underline">doi: 10.1109/TGCN.2024.3466311</a>.
+                        </li>
+                        <li>
+                            A. Paul, R. Allu, K. Singh, C. -P. Li and T. Q. Duong, “Hybridized MA-DRL for Serving xURLLC With Cognizable RIS and UAV Integration,” in <em>IEEE Transactions on Wireless Communications</em>, vol. 23, no. 10, pp. 15507-15524, Oct. 2024, 
+                            <br>
+                            <a href="https://doi.org/10.1109/TWC.2024.3430509" target="_blank" class="hover:underline">doi: 10.1109/TWC.2024.3430509</a>.
+                        </li>
+                        <li>
+                            S. Singh, A. Raviteja, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, “Secrecy Rate Maximization for Active RIS-Aided Robust Uplink NOMA Communications,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 11, pp. 2960-2964, Nov. 2024, 
+                            <br>
+                            <a href="https://doi.org/10.1109/LWC.2024.3424332" target="_blank" class="hover:underline">doi: 10.1109/LWC.2024.3424332</a>.
+                        </li>
+                        <li>
+                            R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, “Robust Energy Efficient Beamforming Design for ISAC Full-Duplex Communication Systems,” in <em>IEEE Wireless Communications Letters</em>, vol. 13, no. 9, pp. 2452-2456, Sept. 2024, 
+                            <br>
+                            <a href="https://doi.org/10.1109/LWC.2024.3418780" target="_blank" class="hover:underline">doi: 10.1109/LWC.2024.3418780</a>.
+                        </li>
+                        <li>
+                            V. Sharma, R. Allu, S. K. Singh, K. Singh, T. Q. Duong and T. A. Tsiftsis, “Robust Transmission Design in Multiobjective RIS-Aided SWIPT IoT Communications,” in <em>IEEE Internet of Things Journal</em>, vol. 11, no. 10, pp. 18605-18618, 15 May 2024, 
+                            <br>
+                            <a href="https://doi.org/10.1109/JIOT.2024.3364392" target="_blank" class="hover:underline">doi: 10.1109/JIOT.2024.3364392</a>.
+                        </li>
+                        <li>
+                            A. Raviteja, K. Singh, K. Agrawal, Z. Ding and C. -P. Li, “FD-NOMA Enabled Multiuser Transmission With Backscatter Communication,” in <em>IEEE Wireless Communications Letters</em>, vol. 12, no. 4, pp. 723-727, April 2023, 
+                            <br>
+                            <a href="https://doi.org/10.1109/LWC.2023.3242041" target="_blank" class="hover:underline">doi: 10.1109/LWC.2023.3242041</a>.
+                        </li>
+                        <li>
+                            R. Allu, O. Taghizadeh, S. K. Singh, K. Singh and C. -P. Li, “Robust Beamformer Design in Active RIS-Assisted Multiuser MIMO Cognitive Radio Networks,” in <em>IEEE Transactions on Cognitive Communications and Networking</em>, vol. 9, no. 2, pp. 398-413, April 2023, 
+                            <br>
+                            <a href="https://doi.org/10.1109/TCCN.2023.3235788" target="_blank" class="hover:underline">doi: 10.1109/TCCN.2023.3235788</a>.
+                        </li>
+                    </ol>
+
+                    <h3 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Conferences</h3>
+                    <ol class="list-decimal pl-5 space-y-4 text-gray-300">
+                        <li>
+                            S. Singh, A. Raviteja, K. Singh, S. K. Singh, A. Kaushik and M. -L. Ku, “Active RIS-aided Uplink for Robust and Secure Multi-User Private Industrial Network,” 2024 IEEE 100th Vehicular Technology Conference (VTC2024-Fall), Washington, DC, USA, 2024, pp. 1-5, 
+                            <br>
+                            <a href="https://doi.org/10.1109/VTC2024-Fall63153.2024.10757924" target="_blank" class="hover:underline">doi: 10.1109/VTC2024-Fall63153.2024.10757924</a>.
+                        </li>
+                        <li>
+                            F. Nassar, K. Singh, S. Prakriya, R. Allu, C. Pan and C. -P. Li, “Robust Beamformer Design for Backscatter-Enabled RIS-Assisted NOMA ISAC,” 2024 IEEE International Conference on Communications Workshops (ICC Workshops), Denver, CO, USA, 2024, pp. 608-613, 
+                            <br>
+                            <a href="https://doi.org/10.1109/ICCWorkshops59551.2024.10615384" target="_blank" class="hover:underline">doi: 10.1109/ICCWorkshops59551.2024.10615384</a>.
+                        </li>
+                        <li>
+                            R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Li, “RSMA-Integrated Full-Duplex Communications for Better Energy and Spectral-Efficiency Trade-off,” 2023 IEEE Globecom Workshops (GC Wkshps), Kuala Lumpur, Malaysia, 2023, pp. 1213-1218.
+                        </li>
+                        <li>
+                            V. Sharma, R. Allu, S. K. Singh, K. Singh, and T. A. Tsiftsis, “RIS-aided SWIPT Green Communications Under Imperfect CSI,” GLOBECOM 2023 - 2023 IEEE Global Communications Conference, Kuala Lumpur, Malaysia, 2023.
+                        </li>
+                        <li>
+                            R. Allu, M. Katwe, K. Singh, T. Q. Duong and C. -P. Lit, “Towards Improved Spectral Efficiency Using RSMA-Integrated Full-Duplex Communications,” PIMRC 2023 - 2023 IEEE Personal, Indoor and Mobile Radio Communications Conference, Toronto, Canada, 2023.
+                        </li>
+                        <li>
+                            R. Allu, S. K. Singh, O. Taghizadeh, K. Singh and C. -P. Lit, “Energy-Efficient Precoder Design in RIS-Assisted Multiuser MIMO Cognitive Radio Networks,” GLOBECOM 2022 - 2022 IEEE Global Communications Conference, Rio de Janeiro, Brazil, 2022, pp. 3338-3343.
+                        </li>
+                    </ol>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-white p-4 mt-6 shadow-inner">
-        <p class="text-center text-gray-600">&copy; 2025 Raviteja Allu. All Rights Reserved.</p>
+    <footer>
+        <p class="text-center">&copy; 2025 Raviteja Allu. All Rights Reserved.</p>
     </footer>
 </body>
 </html>
